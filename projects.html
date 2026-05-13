@@ -55,13 +55,15 @@
            MOBILE  (≤ 768px)
         ───────────────────────────────────── */
         @media (max-width: 768px) {
-            .page-banner { padding: var(--sp-xxxl) var(--sp-margin) var(--sp-xxxl); align-items: flex-start; gap: var(--sp-sm); margin-block: var(--sp-md); }
+            .page-banner { padding: var(--sp-xxxl) var(--sp-margin) var(--sp-md); align-items: flex-start; gap: var(--sp-sm); margin-top: var(--sp-md); }
             .page-banner h1 { font-size: 2.5rem; line-height: 2.75rem; letter-spacing: -0.0625rem; text-align: left; }
             .page-banner-sub { display: none; }
             .eyebrow {order: 1;}
+            .projects { gap: var(--sp-gap);}
             .projects-grid { grid-template-columns: 1fr; }
             .proj-card { grid-column: 1; }
             .proj-header { flex-direction: column; align-items: flex-start; gap: var(--sp-xl); }
+            .btn-text { display: none;}
         }
     </style>
 </head>
@@ -91,9 +93,9 @@
                 <div class="ico-outline"></div>
                 <span>ผลงาน</span>
             </div>
-            <a class="btn-inv" href="contact.html">
+            <a class="btn-text" href="contact.html">
                 ติดต่อเรา
-                <img src="/assets/icon/ui/arrow/inverse.svg" alt="">
+                <img src="/assets/icon/ui/arrow/default.svg" alt="">
             </a>
         </div>
 

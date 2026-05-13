@@ -109,6 +109,7 @@
         setupExitHandler();
         setupSmoothScroll();
         setupMagneticButtons();
+        setupMemberFlip();
         return;
     }
 
@@ -200,5 +201,39 @@
     setupExitHandler();
     setupSmoothScroll();
     setupMagneticButtons();
+    setupMemberFlip();
+
+    // BFCache restore: browser reinstates the page with overlay still at opacity:1
+    window.addEventListener('pageshow', function (e) {
+        if (e.persisted && overlay) gsap.set(overlay, { opacity: 0 });
+    });
+
+    // ── Member card flip ─────────────────────────────────────────────────────
+    function setupMemberFlip() {
+        var isTouch = window.matchMedia('(hover: none)').matches;
+        var activeCard = null;
+        document.querySelectorAll('.member-card').forEach(function (card) {
+            var flipEl = card.querySelector('.member-photo-flip__inner');
+            if (!flipEl) return;
+            if (isTouch) {
+                card.addEventListener('click', function () {
+                    if (activeCard && activeCard !== card) {
+                        var prevFlip = activeCard.querySelector('.member-photo-flip__inner');
+                        if (prevFlip) gsap.to(prevFlip, { rotationY: 0, duration: 0.6, ease: 'power2.inOut' });
+                    }
+                    var isCurrentlyFlipped = activeCard === card;
+                    gsap.to(flipEl, { rotationY: isCurrentlyFlipped ? 0 : 180, duration: 0.6, ease: 'power2.inOut' });
+                    activeCard = isCurrentlyFlipped ? null : card;
+                });
+            } else {
+                card.addEventListener('mouseenter', function () {
+                    gsap.to(flipEl, { rotationY: 180, duration: 0.6, ease: 'power2.inOut' });
+                });
+                card.addEventListener('mouseleave', function () {
+                    gsap.to(flipEl, { rotationY: 0, duration: 0.6, ease: 'power2.inOut' });
+                });
+            }
+        });
+    }
 
 })();
