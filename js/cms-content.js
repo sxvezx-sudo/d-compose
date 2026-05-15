@@ -34,6 +34,10 @@
             .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
 
+    function escUrl(s) {
+        return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    }
+
     function nl2br(s) {
         return esc(s).replace(/\n\n/g, '<br><br>').replace(/\n/g, ' ');
     }
@@ -55,13 +59,13 @@
         }
         a.innerHTML =
             '<div class="proj-card-img">' +
-                '<img src="' + esc(p.main_image || '') + '" alt="' + esc(p.title || '') + '" loading="lazy">' +
+                '<img src="' + escUrl(p.main_image || '') + '" alt="' + esc(p.title || '') + '" loading="lazy">' +
             '</div>' +
             '<div class="card-name">' +
                 '<div class="ico-outline" aria-hidden="true"></div>' +
                 '<h3 class="card-name-text">' + esc(p.title || '') + '</h3>' +
             '</div>' +
-            '<p class="card-loc">' + esc(p.location || '') + '</p>';
+            '<p class="card-loc">' + esc(p.project_type || '') + (p.area ? ' · ' + esc(p.area) : '') + '</p>';
         return a;
     }
 
@@ -241,7 +245,7 @@
         var project = (data.projects || []).find(function (p) { return p.slug === slug; });
         if (!project) return;
 
-        document.title = project.title + ' — Eco Architect Co.,Ltd.';
+        document.title = project.title + ' — Wardwai Architect and Design';
 
         // Hero image + title
         var top   = document.querySelector('.project-top');
@@ -260,12 +264,12 @@
         var specs = document.querySelector('.proj-specs');
         if (specs) {
             var specData = [
-                ['Design',        project.design],
-                ['Photography',   project.photography],
-                ['Location',      project.location],
-                ['Collaboration', project.collaboration],
-                ['Year',          project.year],
-                ['Type',          project.type],
+                ['Project',      project.title],
+                ['Project Type', project.project_type],
+                ['Area',         project.area],
+                ['Location',     project.location],
+                ['Architect',    project.architect],
+                ['Interior',     project.interior],
             ];
             specs.innerHTML = specData
                 .filter(function (r) { return r[1]; })
@@ -333,6 +337,10 @@
         if (s.facebook_url) {
             var fb = document.querySelector('.f-social a[href*="facebook"]');
             if (fb) fb.href = s.facebook_url;
+        }
+        if (s.tiktok_url) {
+            var tt = document.querySelector('.f-social a[href*="tiktok"]');
+            if (tt) tt.href = s.tiktok_url;
         }
     }
 })();

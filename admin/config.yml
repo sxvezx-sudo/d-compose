@@ -16,16 +16,15 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { name: title,         label: Title,           widget: string }
-      - { name: published,     label: Published,        widget: boolean, default: true }
-      - { name: main_image,    label: "Main Image",     widget: image }
-      - { name: type,          label: Type,             widget: string,  hint: "e.g. Hospitality / Eco Hotel" }
-      - { name: year,          label: Year,             widget: number }
-      - { name: location,      label: Location,         widget: string }
-      - { name: description,   label: Description,      widget: text }
-      - { name: design,        label: "Design By",      widget: string,  default: "Eco Architect Co.,Ltd." }
-      - { name: photography,   label: Photography,      widget: string,  required: false }
-      - { name: collaboration, label: Collaboration,    widget: string,  required: false }
+      - { name: title,        label: Title,            widget: string }
+      - { name: published,    label: Published,         widget: boolean, default: true }
+      - { name: main_image,   label: "Main Image",      widget: image }
+      - { name: project_type, label: "Project Type",    widget: string,  hint: "e.g. Residential Renovation" }
+      - { name: area,         label: Area,              widget: string,  hint: "e.g. 155.50 Sq.m.",  required: false }
+      - { name: location,     label: Location,          widget: string }
+      - { name: architect,    label: Architect,         widget: string,  default: "Wardwai Architect and Design" }
+      - { name: interior,     label: Interior,          widget: string,  default: "Wardwai Interior Design", required: false }
+      - { name: description,  label: Description,       widget: text }
       - name: gallery
         label: Gallery
         widget: list
@@ -100,6 +99,7 @@ collections:
           - { name: address,        label: Address,         widget: string }
           - { name: instagram_url,  label: "Instagram URL", widget: string, required: false }
           - { name: facebook_url,   label: "Facebook URL",  widget: string, required: false }
+          - { name: tiktok_url,     label: "TikTok URL",    widget: string, required: false }
           - { name: stat_1, label: "Stat 1", widget: string, default: "มากกว่า 100+ ผลงาน" }
           - { name: stat_2, label: "Stat 2", widget: string, default: "18 รางวัล" }
           - { name: stat_3, label: "Stat 3", widget: string, default: "13 การตีพิมพ์" }
