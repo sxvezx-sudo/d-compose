@@ -144,6 +144,24 @@
         .media-cell img.logo { max-width: 150px; max-height: 150px; object-fit: cover; }
 
         /* ─────────────────────────────────────
+           SERVICES PREVIEW
+        ───────────────────────────────────── */
+        .services--home {
+            padding: var(--sp-xl) var(--sp-margin);
+            display: flex; flex-direction: column; gap: var(--sp-md);
+        }
+        .svc-header {
+            border-bottom: 1px solid var(--c-divider); padding-bottom: var(--sp-md);
+            display: flex; align-items: flex-end; justify-content: space-between;
+        }
+        .svc-header h2 {
+            font-weight: 600; font-size: var(--fs-h2b);
+            line-height: var(--lh-h2b); letter-spacing: var(--ls-h2b);
+        }
+        .services--home .svc-cards-grid .svc-card:nth-child(odd)  { grid-column: 3 / span 4; }
+        .services--home .svc-cards-grid .svc-card:nth-child(even) { grid-column: 7 / span 4; }
+
+        /* ─────────────────────────────────────
            TABLET  (769px – 1023px)
         ───────────────────────────────────── */
         @media (min-width: 769px) and (max-width: 1023px) {
@@ -217,6 +235,9 @@
 
             .media { padding: var(--sp-xl) var(--sp-margin); }
             .media-grid { grid-template-columns: repeat(2, 1fr); gap: var(--sp-sm); }
+
+            .services--home .svc-cards-grid .svc-card:nth-child(odd),
+            .services--home .svc-cards-grid .svc-card:nth-child(even) { grid-column: 1 / -1; }
         }
     </style>
 </head>
@@ -246,7 +267,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="/assets/wardwai-images/hero.jpg" alt="Hero project">
+            <img src="/assets/wardwai-images/projects/drtongs-house/0-ld.jpg" alt="Hero project">
         </div>
     </section>
 
@@ -345,6 +366,55 @@
         <div class="proj-cta-row">
             <a class="btn-outline proj-cta-btn" href="projects.html">
                 ดูผลงานทั้งหมด
+                <img src="/assets/icon/ui/arrow/default.svg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SERVICES
+    ══════════════════════════════ -->
+    <section class="services services--home">
+        <div class="eyebrow">
+            <div class="ico-filled"></div>
+            <span>บริการ</span>
+        </div>
+        <div class="svc-header">
+            <h2>บริการของเรา</h2>
+            <a class="btn-text" href="services.html">
+                ดูบริการทั้งหมด
+                <img src="/assets/icon/ui/arrow/default.svg" alt="">
+            </a>
+        </div>
+        <div class="svc-cards-grid">
+            <div class="svc-card">
+                <a class="svc-card-link" href="services.html#svc-residential" aria-label="ออกแบบที่พักอาศัย"></a>
+                <div class="svc-card-eyebrow"><div class="ico-outline"></div><span class="svc-card-name">ออกแบบที่พักอาศัย</span></div>
+                <p class="svc-card-desc">บ้านพักอาศัยที่ผสมผสานระหว่างความงามทางสถาปัตยกรรมและการใช้งานจริง โดยคำนึงถึงสภาพแวดล้อมและวิถีชีวิตของเจ้าของบ้านเป็นสำคัญ</p>
+                <a class="btn-text svc-card-cta" href="contact.html">ติดต่อเรา<img src="/assets/icon/ui/arrow/default.svg" alt=""></a>
+            </div>
+            <div class="svc-card">
+                <a class="svc-card-link" href="services.html#svc-renovation" aria-label="รีโนเวท"></a>
+                <div class="svc-card-eyebrow"><div class="ico-outline"></div><span class="svc-card-name">รีโนเวท</span></div>
+                <p class="svc-card-desc">ปรับปรุงและต่อเติมอาคารเดิมให้ตอบโจทย์การใช้งานยุคใหม่ ด้วยการออกแบบที่รักษาเสน่ห์ดั้งเดิมและเพิ่มคุณค่าให้กับพื้นที่</p>
+                <a class="btn-text svc-card-cta" href="contact.html">ติดต่อเรา<img src="/assets/icon/ui/arrow/default.svg" alt=""></a>
+            </div>
+            <div class="svc-card">
+                <a class="svc-card-link" href="services.html#svc-interior" aria-label="ออกแบบตกแต่งภายใน"></a>
+                <div class="svc-card-eyebrow"><div class="ico-outline"></div><span class="svc-card-name">ออกแบบตกแต่งภายใน</span></div>
+                <p class="svc-card-desc">พื้นที่ภายในที่ออกแบบอย่างพิถีพิถัน สร้างความกลมกลืนระหว่างสุนทรียศาสตร์และการใช้งาน ตอบสนองทุกความต้องการของผู้อยู่อาศัย</p>
+                <a class="btn-text svc-card-cta" href="contact.html">ติดต่อเรา<img src="/assets/icon/ui/arrow/default.svg" alt=""></a>
+            </div>
+            <div class="svc-card">
+                <a class="svc-card-link" href="services.html#svc-landscape" aria-label="ออกแบบภูมิทัศน์"></a>
+                <div class="svc-card-eyebrow"><div class="ico-outline"></div><span class="svc-card-name">ออกแบบภูมิทัศน์</span></div>
+                <p class="svc-card-desc">พื้นที่ภายนอกที่เชื่อมโยงอาคารกับธรรมชาติอย่างลงตัว สร้างสมดุลระหว่างสิ่งก่อสร้างและสิ่งแวดล้อมโดยรอบ</p>
+                <a class="btn-text svc-card-cta" href="contact.html">ติดต่อเรา<img src="/assets/icon/ui/arrow/default.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="proj-cta-row">
+            <a class="btn-outline proj-cta-btn" href="services.html">
+                ดูบริการทั้งหมด
                 <img src="/assets/icon/ui/arrow/default.svg" alt="">
             </a>
         </div>
