@@ -40,7 +40,7 @@
         }
         .studio-intro {
             display: grid; grid-template-columns: repeat(12, 1fr);
-            gap: var(--sp-gap); row-gap: var(--sp-gap);
+            gap: var(--sp-gap); row-gap: var(--sp-md);
         }
         .studio-intro .eyebrow { grid-column: 1 / -1; justify-self: left; }
         .studio-intro h2 {
@@ -78,8 +78,7 @@
            AWARDS
         ───────────────────────────────────── */
         .awards {
-            padding: var(--sp-xl) var(--sp-margin);
-            display: flex; flex-direction: column; gap: var(--sp-md);
+            display: none;
         }
         .awards-table { display: flex; flex-direction: column; }
         .award-row {
@@ -144,6 +143,7 @@
         }
         .member-name  { font-weight: 700; font-size: var(--fs-label); line-height: 1.25rem; }
         .member-title { font-weight: 500; font-size: 0.75rem; color: var(--c-muted); }
+        div.member-photo-flip__front { background: var(--c-divider); }
 
         /* ─────────────────────────────────────
            TABLET  (769px – 1023px)
@@ -243,7 +243,7 @@
             <h2>เราเชื่อว่าบ้านทุกหลังมีเรื่องราวที่ไม่เหมือนกัน นั่นคือเหตุผลที่ทุกโปรเจคของเราเริ่มจากการนั่งคุย ฟัง และทำความเข้าใจว่าคุณใช้ชีวิตอยู่กับใคร อย่างไร และอยากให้บ้านรู้สึกแบบไหน</h2>
         </div>
         <div class="studio-main-img">
-            <img src="/assets/images/about-us/1.webp" alt="Studio architecture">
+            <img src="/assets/wardwai-images/about-hero.jpg" alt="Studio architecture">
         </div>
         <div class="studio-body">
             <div class="studio-stats">
@@ -256,7 +256,7 @@
                 <p>บ้านที่ดีไม่จำเป็นต้องซับซ้อน บางทีสิ่งที่ทำให้บ้านพิเศษคือมุมเล็กๆ ที่แสงส่องเข้ามาพอดีตอนเช้า หรือระยะห่างระหว่างโซฟากับทีวีที่แค่รู้สึกว่า "ใช่" ทุกครั้งที่นั่ง<br><br>กระบวนการออกแบบของเราโปร่งใสตั้งแต่ต้น คุณจะรู้ทุกขั้นตอน เข้าใจทุกการตัดสินใจ และมีส่วนร่วมกับทุกรายละเอียดที่สำคัญ<br><br>แต่ละโปรเจคถูกออกแบบให้สอดคล้องกับบริบทของพื้นที่และไลฟ์สไตล์ของผู้อยู่อาศัย โดยคำนึงถึงการระบายอากาศตามธรรมชาติ การใช้แสงสว่างจากธรรมชาติ และการเลือกใช้วัสดุที่เป็นมิตรต่อสิ่งแวดล้อม</p>
             </div>
             <div class="studio-portrait">
-                <img src="/assets/images/about-us/2.webp" alt="Studio portrait">
+                <img src="/assets/wardwai-images/about-sm.jpg" alt="Studio portrait">
             </div>
         </div>
     </section>
@@ -402,98 +402,45 @@
         </div>
 
         <div class="member-row">
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
+            <div class="member-card">
                 <div class="member-photo-flip">
                     <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/3.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
+                        <div class="member-photo-flip__front"></div>
+                        <div class="member-photo-flip__back"><p class="member-motto">—</p></div>
                     </div>
                 </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
+                <p class="member-name">ณชพล เฉลิมลักษณ์ (แจม)</p>
+                <p class="member-title">Architect</p>
             </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
+            <div class="member-card">
                 <div class="member-photo-flip">
                     <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/4.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
+                        <div class="member-photo-flip__front"></div>
+                        <div class="member-photo-flip__back"><p class="member-motto">—</p></div>
                     </div>
                 </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
+                <p class="member-name">ชุติรัตน์ เฉลิมลักษณ์ (กาน)</p>
+                <p class="member-title">Interior Designer</p>
             </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
+            <div class="member-card">
                 <div class="member-photo-flip">
                     <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/5.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
+                        <div class="member-photo-flip__front"></div>
+                        <div class="member-photo-flip__back"><p class="member-motto">—</p></div>
                     </div>
                 </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
+                <p class="member-name">สมาชิกทีม</p>
+                <p class="member-title">Project Manager</p>
             </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
+            <div class="member-card">
                 <div class="member-photo-flip">
                     <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/6.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
+                        <div class="member-photo-flip__front"></div>
+                        <div class="member-photo-flip__back"><p class="member-motto">—</p></div>
                     </div>
                 </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
-            </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
-                <div class="member-photo-flip">
-                    <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/7.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
-                    </div>
-                </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
-            </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
-                <div class="member-photo-flip">
-                    <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/8.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
-                    </div>
-                </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
-            </div>
-        </div>
-
-        <div class="member-row">
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
-                <div class="member-photo-flip">
-                    <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/9.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
-                    </div>
-                </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
-            </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
-                <div class="member-photo-flip">
-                    <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/10.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
-                    </div>
-                </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
-            </div>
-            <div class="member-card" data-motto="คติประจำตัวของสมาชิก">
-                <div class="member-photo-flip">
-                    <div class="member-photo-flip__inner">
-                        <img class="member-photo-flip__front" src="/assets/images/about-us/11.webp" alt="Kamron sutthi">
-                        <div class="member-photo-flip__back"><p class="member-motto">คติประจำตัวของสมาชิก</p></div>
-                    </div>
-                </div>
-                <p class="member-name">Kamron sutthi (Kaew)</p>
-                <p class="member-title">Managing Director</p>
+                <p class="member-name">สมาชิกทีม</p>
+                <p class="member-title">Structural Engineer</p>
             </div>
         </div>
     </section>
