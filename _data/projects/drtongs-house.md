@@ -1,7 +1,7 @@
 ---
 title: Dr. Tong's House
 published: true
-main_image: /assets/wardwai-images/projects/drtong's-house/1-ld.jpg
+main_image: /assets/wardwai-images/projects/drtongs-house/1-ld.jpg
 project_type: Housing Design
 area: "246.5 Sq.m."
 location: Roi Et, Thailand
@@ -15,17 +15,17 @@ description: |
   This design not only emphasizes simplicity and elegance but also ensures a harmonious connection with nature, making it a perfect retreat for those who appreciate both comfort and style.
   
 gallery:
-  - /assets/wardwai-images/projects/drtong's-house/2-ld.jpg
-  - /assets/wardwai-images/projects/drtong's-house/3-ld.jpg
-  - /assets/wardwai-images/projects/drtong's-house/4-ld.jpg
-  - /assets/wardwai-images/projects/drtong's-house/5-ld.jpg
-  - /assets/wardwai-images/projects/drtong's-house/6-ld.jpg
-  - /assets/wardwai-images/projects/drtong's-house/7-ld.jpg
-  - /assets/wardwai-images/projects/drtong's-house/8-pt.jpg
-  - /assets/wardwai-images/projects/drtong's-house/9-pt.jpg
-  - /assets/wardwai-images/projects/drtong's-house/10-sq.jpg
-  - /assets/wardwai-images/projects/drtong's-house/11-sq.jpg
-  - /assets/wardwai-images/projects/drtong's-house/12-sq.jpg
-  - /assets/wardwai-images/projects/drtong's-house/13-sq.jpg
-  - /assets/wardwai-images/projects/drtong's-house/14-sq.jpg
+  - /assets/wardwai-images/projects/drtongs-house/2-ld.jpg
+  - /assets/wardwai-images/projects/drtongs-house/3-ld.jpg
+  - /assets/wardwai-images/projects/drtongs-house/4-ld.jpg
+  - /assets/wardwai-images/projects/drtongs-house/5-ld.jpg
+  - /assets/wardwai-images/projects/drtongs-house/6-ld.jpg
+  - /assets/wardwai-images/projects/drtongs-house/7-ld.jpg
+  - /assets/wardwai-images/projects/drtongs-house/8-pt.jpg
+  - /assets/wardwai-images/projects/drtongs-house/9-pt.jpg
+  - /assets/wardwai-images/projects/drtongs-house/10-sq.jpg
+  - /assets/wardwai-images/projects/drtongs-house/11-sq.jpg
+  - /assets/wardwai-images/projects/drtongs-house/12-sq.jpg
+  - /assets/wardwai-images/projects/drtongs-house/13-sq.jpg
+  - /assets/wardwai-images/projects/drtongs-house/14-sq.jpg
 ---
