@@ -24,8 +24,8 @@
     --c-inv-sec:     #555555;
 
     /* Typography */
-    --font:      'Noto Sans Thai', sans-serif;
-    --font-loop: 'Noto Sans Thai Looped', 'Noto Sans Thai', sans-serif;
+    --font:      'Inter Tight', 'Noto Sans Thai', sans-serif;
+    --font-loop: 'Inter Tight', 'Noto Sans Thai Looped', 'Noto Sans Thai', sans-serif;
 
     /* Nav height — logo (48px) + vertical padding (8px × 2). Used as padding-top offset
        for the first section on any page so content clears the position:absolute nav. */
