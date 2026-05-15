@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Production website for **Eco Architect Co.,Ltd.**, a Thai architecture firm based in Phuket. Four static HTML pages share a common CSS file. No build step, no framework — deploy to any static host.
+Production website for **Wardwai Architect and Design**, a Thai architecture firm based in Pathum Thani. Multiple static HTML pages share a common CSS file. No build step, no framework — deploy to any static host.
 
 ---
 
@@ -122,4 +122,4 @@ Footer (`<div data-component="footer">`) is **outside** `.page`.
 
 ## Migration
 
-Do not add a framework for this DEMO. If migration to Vite or React/Vue is needed, see `docs/migration.md`.
+Do not add a framework. If migration to Vite or Astro is needed, see `docs/migration.md`.
