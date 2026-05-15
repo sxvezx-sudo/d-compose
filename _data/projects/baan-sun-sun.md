@@ -12,9 +12,6 @@ gallery:
   - /assets/wardwai-images/projects/baan-sun-sun/2-ld.jpg
   - /assets/wardwai-images/projects/baan-sun-sun/3-ld.jpg
   - /assets/wardwai-images/projects/baan-sun-sun/4-ld.jpg
-  - /assets/wardwai-images/projects/baan-sun-sun/5-sq.jpg
-  - /assets/wardwai-images/projects/baan-sun-sun/6-pt.jpg
-  - /assets/wardwai-images/projects/baan-sun-sun/7-pt.jpg
   - /assets/wardwai-images/projects/baan-sun-sun/8-ld.jpg
   - /assets/wardwai-images/projects/baan-sun-sun/9-ld.jpg
   - /assets/wardwai-images/projects/baan-sun-sun/10-sq.jpg
