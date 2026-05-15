@@ -158,6 +158,9 @@
             font-weight: 600; font-size: var(--fs-h2b);
             line-height: var(--lh-h2b); letter-spacing: var(--ls-h2b);
         }
+        .services--home .svc-cards-grid {
+            display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--sp-gap);
+        }
         .services--home .svc-cards-grid .svc-card:nth-child(odd)  { grid-column: 3 / span 4; }
         .services--home .svc-cards-grid .svc-card:nth-child(even) { grid-column: 7 / span 4; }
 
