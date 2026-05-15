@@ -224,10 +224,16 @@
             var row = document.createElement('div');
             row.className = 'member-row';
             chunk.forEach(function (m) {
+                var photoHtml = m.photo
+                    ? '<img class="member-photo-flip__front" src="' + escUrl(m.photo) + '" alt="' + esc(m.name || '') + '" loading="lazy">'
+                    : '<div class="member-photo-flip__front"></div>';
                 row.innerHTML +=
                     '<div class="member-card">' +
-                        '<div class="member-photo">' +
-                            '<img src="' + esc(m.photo || '') + '" alt="' + esc(m.name || '') + '" loading="lazy">' +
+                        '<div class="member-photo-flip">' +
+                            '<div class="member-photo-flip__inner">' +
+                                photoHtml +
+                                '<div class="member-photo-flip__back"><p class="member-motto">' + esc(m.motto || '—') + '</p></div>' +
+                            '</div>' +
                         '</div>' +
                         '<p class="member-name">'  + esc(m.name || '')  + '</p>' +
                         '<p class="member-title">' + esc(m.role || '')  + '</p>' +
