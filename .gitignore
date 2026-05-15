@@ -1,5 +1,4 @@
 .DS_Store
-_data/content.json
 node_modules/
 
 # wrangler files
