@@ -40,7 +40,8 @@
 
     // ── Detect navigation type ────────────────────────────────────────────────
     var navEntry  = performance.getEntriesByType('navigation')[0];
-    var isRefresh = navEntry ? navEntry.type === 'reload' : false;
+    var navType   = navEntry ? navEntry.type : '';
+    var isRefresh = navType === 'reload' || navType === 'back_forward';
 
     // Overlay lives in HTML at opacity: 1 (CSS default) — no flash possible
     var overlay = document.querySelector('.page-overlay');
@@ -204,8 +205,12 @@
     setupMemberFlip();
 
     // BFCache restore: browser reinstates the page with overlay still at opacity:1
+    // Use direct DOM style — gsap.set can silently fail in frozen BFCache context (Safari)
     window.addEventListener('pageshow', function (e) {
-        if (e.persisted && overlay) gsap.set(overlay, { opacity: 0 });
+        if (e.persisted && overlay) {
+            overlay.style.opacity = '0';
+            overlay.style.pointerEvents = 'none';
+        }
     });
 
     // ── Member card flip ─────────────────────────────────────────────────────
