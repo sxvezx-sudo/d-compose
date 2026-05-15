@@ -1,7 +1,7 @@
 ---
 title: Baan Tiw Phai
 published: true
-main_image: /assets/wardwai-images/projects/baan-tiw-phai/1-ld.jpg
+main_image: /assets/wardwai-images/projects/baan-tiw-phai/1-ld.webp
 project_type: Housing Design
 area: "216.25 Sq.m."
 location: Nakhon Ratchasima, Thailand
@@ -16,25 +16,25 @@ description: |
 
   Long Corridor คือทางเดินหลักของบ้านหลังนี้ที่นำทางเราไปสู่ห้องนอนแต่ละห้อง ให้ความรู้สึกถึงความเป็นส่วนตัวที่ยังเชื่อมต่อกันได้ ภายในห้องนอนถูกออกแบบให้เรียบง่าย อบอุ่นด้วยโทนขาว และสีไม้ และที่สำคัญคือ "แสงเงา" จากทิวไผ่ที่ช่วยสกีนแสง และความร้อนจากแดด ช่วยสร้างบรรยากาศที่สงบและผ่อนคลาย
 gallery:
-  - /assets/wardwai-images/projects/baan-tiw-phai/2-pt.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/3-pt.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/4-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/5-fp.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/6-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/7-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/8-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/9-pt.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/10-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/11-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/12-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/13-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/14-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/15-pt.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/16-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/17-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/18-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/19-pt.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/20-pt.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/21-ld.jpg
-  - /assets/wardwai-images/projects/baan-tiw-phai/22-pt.jpg
+  - /assets/wardwai-images/projects/baan-tiw-phai/2-pt.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/3-pt.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/4-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/5-fp.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/6-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/7-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/8-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/9-pt.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/10-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/11-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/12-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/13-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/14-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/15-pt.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/16-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/17-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/18-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/19-pt.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/20-pt.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/21-ld.webp
+  - /assets/wardwai-images/projects/baan-tiw-phai/22-pt.webp
 ---
