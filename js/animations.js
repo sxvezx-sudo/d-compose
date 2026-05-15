@@ -209,31 +209,44 @@
     });
 
     // ── Member card flip ─────────────────────────────────────────────────────
+    // Uses event delegation on .team so it works after cms-content.js replaces
+    // the hardcoded cards with CMS-rendered ones asynchronously.
     function setupMemberFlip() {
         var isTouch = window.matchMedia('(hover: none)').matches;
         var activeCard = null;
-        document.querySelectorAll('.member-card').forEach(function (card) {
-            var flipEl = card.querySelector('.member-photo-flip__inner');
-            if (!flipEl) return;
-            if (isTouch) {
-                card.addEventListener('click', function () {
-                    if (activeCard && activeCard !== card) {
-                        var prevFlip = activeCard.querySelector('.member-photo-flip__inner');
-                        if (prevFlip) gsap.to(prevFlip, { rotationY: 0, duration: 0.6, ease: 'power2.inOut' });
-                    }
-                    var isCurrentlyFlipped = activeCard === card;
-                    gsap.to(flipEl, { rotationY: isCurrentlyFlipped ? 0 : 180, duration: 0.6, ease: 'power2.inOut' });
-                    activeCard = isCurrentlyFlipped ? null : card;
-                });
-            } else {
-                card.addEventListener('mouseenter', function () {
-                    gsap.to(flipEl, { rotationY: 180, duration: 0.6, ease: 'power2.inOut' });
-                });
-                card.addEventListener('mouseleave', function () {
-                    gsap.to(flipEl, { rotationY: 0, duration: 0.6, ease: 'power2.inOut' });
-                });
-            }
-        });
+        var team = document.querySelector('.team');
+        if (!team) return;
+
+        if (isTouch) {
+            team.addEventListener('click', function (e) {
+                var card = e.target.closest('.member-card');
+                if (!card) return;
+                var flipEl = card.querySelector('.member-photo-flip__inner');
+                if (!flipEl) return;
+                if (activeCard && activeCard !== card) {
+                    var prev = activeCard.querySelector('.member-photo-flip__inner');
+                    if (prev) gsap.to(prev, { rotationY: 0, duration: 0.6, ease: 'power2.inOut' });
+                }
+                var flipped = activeCard === card;
+                gsap.to(flipEl, { rotationY: flipped ? 0 : 180, duration: 0.6, ease: 'power2.inOut' });
+                activeCard = flipped ? null : card;
+            });
+        } else {
+            team.addEventListener('mouseover', function (e) {
+                var to   = e.target.closest('.member-card');
+                var from = e.relatedTarget ? e.relatedTarget.closest('.member-card') : null;
+                if (!to || to === from) return;
+                var flipEl = to.querySelector('.member-photo-flip__inner');
+                if (flipEl) gsap.to(flipEl, { rotationY: 180, duration: 0.6, ease: 'power2.inOut' });
+            });
+            team.addEventListener('mouseout', function (e) {
+                var from = e.target.closest('.member-card');
+                var to   = e.relatedTarget ? e.relatedTarget.closest('.member-card') : null;
+                if (!from || from === to) return;
+                var flipEl = from.querySelector('.member-photo-flip__inner');
+                if (flipEl) gsap.to(flipEl, { rotationY: 0, duration: 0.6, ease: 'power2.inOut' });
+            });
+        }
     }
 
 })();
