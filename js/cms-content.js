@@ -50,7 +50,7 @@
 
     function makeCard(p, inlineGrid) {
         const a = document.createElement('a');
-        a.className = 'proj-card proj-card--vertical';
+        a.className = 'proj-card proj-card--vertical' + (/-pt\./.test(p.main_image || '') ? ' proj-card--portrait' : '');
         a.href = 'project-detail.html?slug=' + encodeURIComponent(p.slug);
         if (inlineGrid) {
             a.style.gridColumn = inlineGrid.col + '/span 6';
@@ -251,13 +251,15 @@
         var project = (data.projects || []).find(function (p) { return p.slug === slug; });
         if (!project) return;
 
-        document.title = project.title + ' — Wardwai Architect and Design';
+        document.title = project.title + ' — D Compose Architect';
 
         // Hero image + title
         var top   = document.querySelector('.project-top');
         if (top) {
             var img = top.querySelector('.project-hero-img img');
             if (img && project.main_image) { img.src = project.main_image; img.alt = project.title; }
+            var heroWrap = top.querySelector('.project-hero-img');
+            if (heroWrap) heroWrap.classList.toggle('is-portrait', /-pt\./.test(project.main_image || ''));
             var h1 = top.querySelector('h1');
             if (h1) h1.textContent = project.title || '';
         }

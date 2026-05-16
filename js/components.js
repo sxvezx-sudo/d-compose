@@ -35,6 +35,7 @@
                 if (style) card.setAttribute('style', style);
                 const extraClass = el.getAttribute('class');
                 if (extraClass) extraClass.trim().split(/\s+/).forEach(function (c) { card.classList.add(c); });
+                if (/-pt\./.test(image)) card.classList.add('proj-card--portrait');
                 el.outerHTML = card.outerHTML;
             });
         } catch (e) {
