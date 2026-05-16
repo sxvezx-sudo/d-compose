@@ -4,11 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ---
 
-## Project Overview
+# Project: D Compose Architect Website
 
-Production website for **Wardwai Architect and Design**, a Thai architecture firm based in Pathum Thani. Multiple static HTML pages share a common CSS file. No build step, no framework — deploy to any static host.
+This is the website project for **D Compose Architect** — a Thai minimalist residential architecture studio owned by Supachai Piromrach.
 
----
+## Studio Info
+- Studio name: D Compose Architect
+- Phone: 063 782 5195
+- Email: d.signcompose@gmail.com
+- Instagram: @dcompose.architects
+- Facebook: facebook.com/dcompose.Architect
+
+## Project Notes
+- Base layout and style is adapted from Wardwai Architect — do NOT change layout, fonts, colors, or visual style
+- Do NOT touch images or project/portfolio content
+- Only replace text content as instructed
 
 ## Development
 
